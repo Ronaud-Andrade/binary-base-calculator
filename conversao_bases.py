@@ -1,5 +1,5 @@
 from os import system
-system('cls') #Clean the terminal
+system('cls') #Clean the terminal on windows
 
 print("PT-BR: Esse programa é um conversor de bases")
 print("EN: This program is a base converter")
@@ -12,23 +12,22 @@ valor_dec = 0
 if(base == "bin"):
     #casting
         valor = int(valor)
-        
         #loop
         while(valor > 0 or valor > 1):
             valor_inteiro = valor // 2 #4//2 = 2
             valor_resto = valor % 2 #4%2 = 0
             print(valor_resto)
             valor = valor_inteiro
-print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")
+        print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")
             
-if(base == "dec"):
-    
+if(base == "dec"): 
     #loop
+    v = 1
     for i in range(valor_characters):
-        if(valor[i] == 1):
-            valor_convertido = i*2
-            valor_dec += valor_convertido
-    print(valor_dec)
+        valor_characters += -1
+        #print(valor[int(valor_characters)])
+        
+        valor_dec += int(valor[valor_characters])*(2**i)
+        print(valor_dec)
 
-
-    
+#print(valor_dec)
