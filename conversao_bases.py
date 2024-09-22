@@ -28,6 +28,5 @@ if(base == "dec"):
         #print(valor[int(valor_characters)])
         
         valor_dec += int(valor[valor_characters])*(2**i)
-        print(valor_dec)
+print(valor_dec)
 
-#print(valor_dec)
