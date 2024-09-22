@@ -18,9 +18,8 @@ if(base == "bin"):
             valor_resto = valor % 2 #4%2 = 0
             print(valor_resto)
             valor = valor_inteiro
-        print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")
-            
-if(base == "dec"): 
+        print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")           
+elif(base == "dec"): 
     #loop
     v = 1
     for i in range(valor_characters):
@@ -28,5 +27,5 @@ if(base == "dec"):
         #print(valor[int(valor_characters)])
         
         valor_dec += int(valor[valor_characters])*(2**i)
-print(valor_dec)
-
+    print(valor_dec)
+else: print("Unknown function")
