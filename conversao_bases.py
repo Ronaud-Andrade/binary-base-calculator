@@ -21,7 +21,6 @@ if(base == "bin"):
         print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")           
 elif(base == "dec"): 
     #loop
-    v = 1
     for i in range(valor_characters):
         valor_characters += -1
         #print(valor[int(valor_characters)])
