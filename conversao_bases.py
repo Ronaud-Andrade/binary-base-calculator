@@ -7,18 +7,23 @@ valor = input("Enter a value: ")
 valor_characters = len(valor) #Number of characters
 base = str(input("Enter the base you want to convert: Ex.: Bin; Dec. "))
 base = base.lower() #Transforming the string into lowercase
-
+array = []
 valor_dec = 0
 if(base == "bin"):
     #casting
         valor = int(valor)
         #loop
         while(valor > 0 or valor > 1):
-            valor_inteiro = valor // 2 #4//2 = 2
-            valor_resto = valor % 2 #4%2 = 0
-            print(valor_resto)
+            valor_inteiro = valor // 2 #4/2 = 2
+            valor_resto = valor % 2 #4mod2 = 0
+            #print(valor_resto, end="")
+            array.append(valor_resto)
+            #print(array)
             valor = valor_inteiro
-        print("The displayed value is inverted. Example: 001 -> 100 (Binary) = 4 (Decimal)")           
+    
+        for i in range(len(array)):
+            print(array[-1-i], end="")
+                    
 elif(base == "dec"): 
     #loop
     for i in range(valor_characters):
