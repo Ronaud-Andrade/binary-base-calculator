@@ -6,7 +6,8 @@ def menu():
     print(
         f"{_} \n"
         "Bem-vindo \n"
-        "Esse código é um conversor de bases númericas"
+        "Esse código é um conversor de bases númericas \n"
+        f"{_} \n"
     )
 
 def main():
@@ -29,6 +30,7 @@ def main():
             elif(base_converter == "Hex"):
                 #Converter para Hexadecimal
                 pass
+            else: print("Operação desconhecida")
         elif(base_principal == "Bin"):
             if(base_converter == "Dec"):
                 #Converter para Decimal
@@ -39,7 +41,7 @@ def main():
                 x = to_dec(valor_digitado)
                 y = to_oct(x)
 
-                print("Valor em decimal: ", end="")
+                print("Valor em octal: ", end="")
                 for i in range(len(y)):
                     print(y[-1-i], end="")
                 print()
@@ -48,7 +50,8 @@ def main():
                 #Converter para Hexadecimal
                 pass
             elif(base_principal == "Oct"):
-                pass               
+                pass      
+            else: print("Operação desconhecida")         
         elif(base_principal == "Oct"):
             if(base_converter == "Dec"):
                 #Converter para Decimal
@@ -59,6 +62,8 @@ def main():
             elif(base_converter == "Bin"):
                 #Converter para Binario
                 pass
+            else: print("Operação desconhecida")
+        else: print("Operação desconhecida")
 
 def to_dec(valor):
 
