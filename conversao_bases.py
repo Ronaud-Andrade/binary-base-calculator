@@ -15,7 +15,7 @@ def main():
     while(True):
         menu()
         base_principal = str(input("Digite a base númerica (Ex.: Dec, Bin, Oct, Hex) -> ")).capitalize()
-        base_converter = str(input("D1igite a base númerica para qual quer converter: ")).capitalize()
+        base_converter = str(input("D1igite a base númerica para qual quer converter -> ")).capitalize()
         print()
         valor_digitado = str(input("Digite o valor: "))
         #to_dec(valor_digitado)
@@ -34,7 +34,7 @@ def main():
         elif(base_principal == "Bin"):
             if(base_converter == "Dec"):
                 #Converter para Decimal
-                print(f"Decimal: {to_dec(valor_digitado)}")
+                print(f"Valor em decimal: {to_dec(valor_digitado)}")
                 pass
             elif(base_converter == "Oct"):
                 #Converter para Octal
@@ -64,6 +64,18 @@ def main():
                 pass
             else: print("Operação desconhecida")
         else: print("Operação desconhecida")
+
+        esc = str(input("Caso queria encerrar, digite: [Y/N] -> "))
+
+        if(esc == "Y"):
+            print()
+            print("OK! Adeus.")
+            print()
+            break
+        elif(esc == "N"):
+            print()
+            print("OK!")
+            print()
 
 def to_dec(valor):
 
