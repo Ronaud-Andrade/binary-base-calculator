@@ -65,7 +65,7 @@ def main():
             else: print("Operação desconhecida")
         else: print("Operação desconhecida")
 
-        esc = str(input("Caso queria encerrar, digite: [Y/N] -> "))
+        esc = str(input("Caso queria encerrar, digite: [Y/N] -> ")).upper()
 
         if(esc == "Y"):
             print()
@@ -76,6 +76,7 @@ def main():
             print()
             print("OK!")
             print()
+        else: print("")
 
 def to_dec(valor):
 
